@@ -6,6 +6,7 @@ from flask_jwt_extended import (
     get_jwt_identity
 )
 from flask_mail import Mail,  Message
+from flask_cors import CORS
 
 import os
 import datetime
@@ -16,6 +17,7 @@ from user_api.common import AESCipher, create_db_file
 from user_api.models import User, db, user_schema, login_form_schema, reset_password_schema
 
 app = Flask(__name__)
+CORS(app)
 app.config.from_object(config_app)
 db.init_app(app)
 jwt = JWTManager(app)
