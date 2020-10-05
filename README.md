@@ -1,4 +1,4 @@
-# SourceSage Python Techincal Testing by Vix Lee (lehungvi.cntt@gmail.com)
+# Python Techincal Testing by Vix Lee (lehungvi.cntt@gmail.com)
 
 ## Overview
 The application is a Rest-Ful API for
